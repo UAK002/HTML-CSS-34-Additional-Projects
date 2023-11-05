@@ -333,5 +333,6 @@ main {
 }
 .btn-hero:hover {
   color: var(--white);
+  /* background: var(--black); */
   background: var(--black);
 }
