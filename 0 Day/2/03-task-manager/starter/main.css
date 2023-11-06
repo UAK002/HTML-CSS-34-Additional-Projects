@@ -258,3 +258,42 @@ ul {
 Task Manager
 ===============
 */
+
+.task-form {
+  margin-top: 6rem;
+}
+.task-form h4 {
+  text-align: center;
+}
+.submit-btn {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  .form-control {
+    display: flex;
+  }
+  .task-input {
+    border-radius: 0;
+    border-top-left-radius: var(--borderRadius);
+    border-bottom-left-radius: var(--borderRadius);
+  }
+  .submit-btn {
+    margin-top: 0;
+    border-radius: 0;
+    border-top-right-radius: var(--borderRadius);
+    border-bottom-right-radius: var(--borderRadius);
+    width: 175px;
+  }
+}
+.text-success {
+  color: var(--green-dark);
+}
+
+/* 
+
+
+- T .text-success 1(D)& color --green-Dark
+
+*/

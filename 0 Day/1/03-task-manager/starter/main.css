@@ -274,13 +274,13 @@ Task Manager
     display: flex;
   }
   .task-input {
-    border: 0;
+    border-radius: 0;
     border-top-left-radius: var(--borderRadius);
     border-bottom-left-radius: var(--borderRadius);
   }
   .submit-btn {
     margin-top: 0;
-    border: 0;
+    border-radius: 0;
     border-top-right-radius: var(--borderRadius);
     border-bottom-right-radius: var(--borderRadius);
     width: 175px;
