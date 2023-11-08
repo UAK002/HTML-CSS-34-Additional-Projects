@@ -257,3 +257,34 @@ ul {
 Modal
 ===============
 */
+
+.hero {
+  min-height: 100vh;
+  background: url('./hero.jpeg') center/cover no-repeat;
+  display: grid;
+  place-items: center;
+}
+.banner {
+  background: var(--white);
+  padding: 4rem 0;
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-2);
+  width: 90vw;
+  text-align: center;
+  max-width: var(--fixed-width);
+}
+
+.modal-overlay {
+  display: none;
+}
+
+/* 
+
+- T .hero 4(M B DP)& min-height 100vh 
+- T .hero  & BG url("hero-img") center/cover no-repeat
+- T .hero  &  display grid & PI center
+- T .banner 7(BPBBT W M)& BG --white & P 4rem 0 & BRAD --radius & box-shadow --shadow-2 & TA center
+- T .banner & W 90vw 
+- T .banner & max-width --fixed-width
+
+*/
