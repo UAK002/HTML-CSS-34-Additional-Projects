@@ -308,9 +308,15 @@ nav {
   margin: 0;
   /* to do height overflow transition */
   /* get height of ul.links */
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
 }
 
 /* to do add .show-links */
+.show-links {
+  height: 10rem;
+}
 
 @media screen and (min-width: 800px) {
   .nav-toggle {
@@ -331,6 +337,7 @@ nav {
   .links {
     display: flex;
     /* to do height */
+    height: auto;
   }
   .links a {
     padding: 0;
