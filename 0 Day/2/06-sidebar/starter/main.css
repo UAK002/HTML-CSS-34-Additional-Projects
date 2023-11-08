@@ -295,9 +295,13 @@ Sidebar
   box-shadow: var(--shadow-2);
   transition: var(--transition);
   /* to do hide sidebar */
+  transform: translate(-100%);
 }
 
 /* to do add .show-sidebar */
+.show-sidebar {
+  transform: translate(0);
+}
 
 @media screen and (min-width: 676px) {
   .sidebar {
