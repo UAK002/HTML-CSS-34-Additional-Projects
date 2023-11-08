@@ -311,3 +311,44 @@ nav {
 }
 
 /* to do add .show-links */
+
+@media screen and (min-width: 800px) {
+  .nav-toggle {
+    display: none;
+  }
+  .nav-center {
+    /* background: red; */
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .links {
+    display: flex;
+    /* to do height */
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .links a:hover {
+    background: transparent;
+    padding: 0;
+  }
+  .social-icons {
+    display: flex;
+  }
+  .social-icons a {
+    color: var(--primary-500);
+    margin: 0 0.5rem;
+    transition: var(--transition);
+  }
+  .social-icons a:hover {
+    color: var(--primary-300);
+  }
+}
