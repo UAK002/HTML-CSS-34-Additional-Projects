@@ -354,3 +354,60 @@ Tasks
 .delete-btn {
   color: var(--red-dark);
 }
+
+/*
+=============== 
+Single Task Page
+===============
+*/
+
+.single-task-form {
+  margin-top: 6rem;
+}
+.single-task-form h4 {
+  text-align: center;
+}
+.single-task-form p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.single-task-form .form-control {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  gap: 0 1rem;
+  margin-bottom: 0.75rem;
+}
+.single-task-form label {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+.back-link {
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 6rem;
+  background: var(--black);
+}
+.back-link:hover {
+  background: var(--black);
+  opacity: 0.75;
+}
+.single-task-form .form-alert {
+  text-align: center;
+  margin-top: 1rem;
+}
+.single-task-form input[type='checkbox'] {
+  justify-self: start;
+}
+
+/* 
+
+- T .back-link 5(WMTMB)& display block & W 250px & M 0 auto & TA center & MT 6rem & BG --black
+
+- T .back-link:hover 2(Bo)& BG --black & opacity 0.75
+
+- T .single-task-form .form-alert 2(TM)& TA center & MT 1rem
+
+*/
