@@ -275,16 +275,51 @@ Modal
 }
 
 .modal-overlay {
-  display: none;
+  /* display: none; */
+  position: fixed;
+  /* background: rgba(73, 166, 233, 0.5); */
+  background: rgba(0, 0, 0, 0.6);
+  /* top: 0;
+  left: 0; */
+  /* width: 100%;
+  height: 100%; */
+  /* right: 0;
+  bottom: 0; */
+  inset: 0;
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  z-index: -10;
+  /* transition: all 1s ease-in-out;
+  display: none; */
+  transition: all 1s ease-in-out;
 }
-
-/* 
-
-- T .hero 4(M B DP)& min-height 100vh 
-- T .hero  & BG url("hero-img") center/cover no-repeat
-- T .hero  &  display grid & PI center
-- T .banner 7(BPBBT W M)& BG --white & P 4rem 0 & BRAD --radius & box-shadow --shadow-2 & TA center
-- T .banner & W 90vw 
-- T .banner & max-width --fixed-width
-
-*/
+.open-modal {
+  display: grid;
+  visibility: visible;
+  z-index: 10;
+}
+.modal-container {
+  background: var(--white);
+  border-radius: var(--borderRadius);
+  width: 90vw;
+  height: 35vh;
+  max-width: var(--fixed-width);
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: var(--red-dark);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.close-btn:hover {
+  transform: rotate(360deg) scale(1.3);
+}
