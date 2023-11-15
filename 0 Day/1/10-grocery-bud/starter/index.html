@@ -16,6 +16,42 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <h1>grocery bud starter</h1>
+    <section class="section-center">
+      <!-- Form -->
+      <form class="grocery-form">
+        <!-- Alert -->
+        <div class="alert alert-danger">please enter a value</div>
+        <h4>Grocery Bud</h4>
+        <div class="form-row">
+          <input type="text" class="form-input" placeholder="e.g. eggs" />
+          <button class="btn submit-btn text-small" type="submit">
+            submit
+          </button>
+        </div>
+      </form>
+      <!-- End of Form -->
+      <!-- List -->
+      <div class="grocery-container">
+        <!-- list items -->
+        <div class="grocery-list">
+          <!-- Grocery Item -->
+          <article class="grocery-item">
+            <span class="title">apples</span>
+          </article>
+          <div class="btn-container">
+            <button type="button" class="edit-btn">
+              <i class="fa fa-edit"></i>
+            </button>
+            <button type="button" class="delete-btn">
+              <i class="fa fa-trash"></i>
+            </button>
+          </div>
+          <!-- end of Grocery Item -->
+        </div>
+        <!-- end of list items -->
+        <!-- Clear Btn -->
+        <button type="button" class="clear-btn">clear items</button>
+      </div>
+    </section>
   </body>
 </html>
