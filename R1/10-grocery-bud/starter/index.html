@@ -16,6 +16,55 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <h1>grocery bud starter</h1>
+    <section class="section-center">
+      <!-- Form -->
+      <form class="grocery-form">
+        <div class="alert alert-danger">please enter value</div>
+        <h4>grocery bud</h4>
+        <div class="form-row">
+          <input type="text" placeholder="e.g. egss" class="form-input" />
+          <button type="submit" class="btn submit-btn text-small">
+            submit
+          </button>
+        </div>
+      </form>
+      <!-- End of Form -->
+
+      <!-- List -->
+      <div class="grocery-container">
+        <!-- List Items -->
+        <div class="grocery-list">
+          <!-- Single Grocery Item -->
+          <article class="grocery-item">
+            <span class="apples">apples</span>
+            <div class="btn-container">
+              <button type="button" class="edit-btn">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button type="button" class="delete-btn">
+                <i class="fas fa-trash"></i>
+              </button>
+            </div>
+          </article>
+          <!-- end of Single Grocery Item -->
+          <!-- Single Grocery Item -->
+          <article class="grocery-item">
+            <span class="apples">oranges</span>
+            <div class="btn-container">
+              <button type="button" class="edit-btn">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button type="button" class="delete-btn">
+                <i class="fas fa-trash"></i>
+              </button>
+            </div>
+          </article>
+          <!-- end of Single Grocery Item -->
+        </div>
+        <!-- end of List Items -->
+        <button type="button" class="clear-btn text-small">clear items</button>
+      </div>
+      <!-- End of List -->
+    </section>
   </body>
 </html>
